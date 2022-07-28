@@ -1,5 +1,5 @@
-#ifndef MAIN_H
-#define MAIN_H
+#ifndef TESTS_H
+#define TESTS_H
 
 // Test for implementation of correct normalize() function
 bool test_normalize();
@@ -24,4 +24,4 @@ bool test_localizer();
 
 // bool test_simulation();	// todo
 
-#endif /* MAIN_H */
+#endif /* TESTS_H */

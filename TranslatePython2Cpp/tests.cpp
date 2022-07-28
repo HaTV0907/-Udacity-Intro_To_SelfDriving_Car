@@ -1,7 +1,17 @@
 #include <iostream>
-#include "main.h"
-#include "simulate.cpp"
-
+#include "tests.h"
+#ifndef SIMULATE_H
+	#include "simulate.h"
+#endif
+#ifndef HELPERS_H
+	#include "helpers.h"
+#endif
+#ifndef LOCALIZER_H
+	#include "localizer.h"
+#endif
+#ifndef DEBUGGING_HELPERS_H
+	#include "debugging_helpers.h"
+#endif
 using namespace std;
 
 int main() {
@@ -106,7 +116,7 @@ bool test_helpers() {
 		correct = false;
 	}
 	return correct;
-
+	
 }
 
 
@@ -116,7 +126,7 @@ bool test_initialize() {
 	vector < vector <float> > beliefs, correct;
 	beliefs = initialize_beliefs(map);
 
-	int h, w, A;
+	int h, w, A; 
 	float belief;
 
 	h = map.size();
@@ -282,5 +292,5 @@ bool test_localizer() {
 }
 
 // bool test_simulation() {
-// 	// todo
+// 	// todo 
 // }
